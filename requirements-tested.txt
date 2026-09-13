@@ -1,0 +1,5 @@
+# Main versions tested for this release, not a transitive lock.
+inspect-ai==0.3.263
+openai==3.11.0
+PyYAML==6.0.3
+pytest==9.1.1

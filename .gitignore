@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+logs/
+papers/
+.release-work/
+public-release*/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+.vercel/

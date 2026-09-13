@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "false-floor"
+version = "0.2.0"
+description = "An Inspect AI evaluation pack that studies performance changes under evaluation cues."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "False Floor contributors" }]
+keywords = ["evals", "ai-safety", "sandbagging", "evaluation-awareness", "inspect-ai"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "inspect-ai>=0.3.263,<0.4",
+    "pyyaml>=6.0",
+    "openai>=1.40",
+]
+
+[project.optional-dependencies]
+anthropic = ["anthropic>=0.40"]
+groq = ["groq>=0.11"]
+google = ["google-genai>=1.0"]
+# Cerebras and any other OpenAI-compatible endpoint need no extra package:
+# use --model openai-api/<service>/<model> with <SERVICE>_API_KEY and
+# <SERVICE>_BASE_URL set.
+free = ["groq>=0.11", "google-genai>=1.0"]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools]
+packages = ["false_floor"]
+
+[tool.setuptools.package-data]
+false_floor = ["prompts.yaml", "data/*.jsonl", "data/*.md"]
