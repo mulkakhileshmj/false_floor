@@ -14,5 +14,4 @@ Pending: question review, empirical matching checks, statistical calibration,
 a larger dataset, completed evaluations across model families, and reviewed findings.
 The project does not certify deployment safety or identify a model's intent.
 
-See [protocol](../PREREGISTRATION.md), [dataset review](DATASET_REVIEW.md), and
-[grant milestones](../GRANT_PLAN.md).
+See the [protocol](../PREREGISTRATION.md) and [dataset review](DATASET_REVIEW.md).
