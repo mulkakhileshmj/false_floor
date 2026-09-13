@@ -10,7 +10,7 @@ import shutil
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-FILES = ["README.md", "LICENSE", ".gitignore", ".env.example", "pyproject.toml",
+FILES = ["README.md", "PROJECT.md", "LICENSE", ".gitignore", ".env.example", "pyproject.toml",
          "PREREGISTRATION.md", "PITCH.md", "CHANGELOG.md", "REFERENCES.md",
          "CONTRIBUTING.md", "GRANT_PLAN.md", "requirements-tested.txt",
          ".github/workflows/tests.yml", "scripts/run_panel.py", "scripts/summarize.py",
